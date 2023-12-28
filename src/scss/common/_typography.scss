@@ -1,0 +1,114 @@
+@import "./variable";
+
+h1 {
+  font-size: 64px;
+  line-height: 80px;
+  color: $white;
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+
+  @media screen and (max-width: $breakpoint1) {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 56px;
+  color: $white;
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+
+  @media screen and (max-width: $breakpoint2) {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 40px;
+  color: $white;
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 32px;
+  color: $white;
+  margin: 0;
+  font-weight: 700;
+  text-align: center;
+
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 24px;
+  color: $white;
+  margin: 0;
+  font-weight: 700;
+  text-align: center;
+
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 24px;
+  color: $white;
+  margin: 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+p.large {
+  font-size: 20px;
+  line-height: 32px;
+  margin: 0;
+  font-weight: 500;
+  color: $white;
+}
+
+p.regular {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  font-weight: 700;
+  color: $white;
+}
+
+p.small {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+  font-weight: 400;
+  color: $white;
+}
+
+p.extra-small {
+  font-size: 12px;
+  line-height: 24px;
+  margin: 0;
+  font-weight: 400;
+  color: $white;
+}
+
+p.caption {
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0;
+  font-weight: 400;
+  color: $white;
+}
+
+.img-fluid {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}

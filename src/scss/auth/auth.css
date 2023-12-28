@@ -1,0 +1,172 @@
+h1 {
+  font-size: 64px;
+  line-height: 80px;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+}
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 56px;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+}
+@media screen and (max-width: 992px) {
+  h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 40px;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+p.large {
+  font-size: 20px;
+  line-height: 32px;
+  margin: 0;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+p.regular {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+p.small {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+p.extra-small {
+  font-size: 12px;
+  line-height: 24px;
+  margin: 0;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+p.caption {
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.img-fluid {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+/*=================== auth wrapper =======================*/
+.auth_wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+}
+.auth_wrapper .form_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 300px;
+}
+.auth_wrapper .form_wrapper form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.auth_wrapper .form_wrapper form .remember_me {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.auth_wrapper .form_wrapper form .remember_me input[type=checkbox] {
+  cursor: pointer;
+}
+.auth_wrapper .form_wrapper form .submitBtn_wrapper {
+  width: 100%;
+  margin-top: 24px;
+}
+.auth_wrapper .form_wrapper form .submitBtn_wrapper button[type=submit] {
+  display: block;
+  padding: 15px 26px;
+  width: 100%;
+  height: 100%;
+  min-height: 54px;
+  border-radius: 10px;
+  background: #2bd17e;
+  color: #ffffff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  cursor: pointer;
+}
+.auth_wrapper .wave_img_wrapper {
+  position: absolute;
+  bottom: 0;
+}
+.auth_wrapper .wave_img_wrapper img {
+  width: 100vw;
+  height: 100%;
+  max-height: 111px;
+}/*# sourceMappingURL=auth.css.map */

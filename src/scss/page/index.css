@@ -1,0 +1,313 @@
+h1 {
+  font-size: 64px;
+  line-height: 80px;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+}
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 56px;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+}
+@media screen and (max-width: 992px) {
+  h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 40px;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+p.large {
+  font-size: 20px;
+  line-height: 32px;
+  margin: 0;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+p.regular {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+p.small {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+p.extra-small {
+  font-size: 12px;
+  line-height: 24px;
+  margin: 0;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+p.caption {
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.img-fluid {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+/*================== Layout wrapper ======================*/
+.home_wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  min-height: 100vh;
+}
+.home_wrapper .wave_img_wrapper {
+  position: absolute;
+  bottom: 0;
+}
+.home_wrapper .wave_img_wrapper img {
+  width: 100vw;
+  height: 100%;
+  max-height: 111px;
+}
+
+/*================== movie list empty wrapper ======================*/
+.emptyWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+}
+.emptyWrapper .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.emptyWrapper h2 {
+  margin-bottom: 40px;
+}
+.emptyWrapper button {
+  max-width: 202px;
+}
+
+/*================== movie list wrapper ======================*/
+.mainWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  width: 100%;
+  height: 100%;
+  margin: 120px;
+}
+@media screen and (max-width: 1140px) {
+  .mainWrapper {
+    margin: 80px;
+    gap: 60px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .mainWrapper {
+    margin: 50px 50px 80px 50px;
+    gap: 60px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .mainWrapper {
+    margin: 20px 20px 70px 20px;
+    gap: 20px;
+  }
+}
+.mainWrapper .header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.mainWrapper .header_wrapper .cont {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.mainWrapper .header_wrapper .cont .add-movie-link {
+  padding-top: 7px;
+  cursor: pointer;
+}
+.mainWrapper .header_wrapper .logout_Wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+  .mainWrapper .header_wrapper .logout_Wrapper h6 {
+    display: none;
+  }
+}
+.mainWrapper .movieListWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+@media screen and (max-width: 1340px) {
+  .mainWrapper .movieListWrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 992px) {
+  .mainWrapper .movieListWrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 500px) {
+  .mainWrapper .movieListWrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*================== movie card design======================*/
+.card-link {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.card_wrapper {
+  width: 100%;
+  min-width: 282px;
+  background-color: #092c39;
+  height: 100%;
+  padding: 8px 8px 16px 8px;
+  border-radius: 12px;
+}
+@media screen and (max-width: 1140px) {
+  .card_wrapper {
+    min-width: 180px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .card_wrapper {
+    min-width: 100px;
+  }
+}
+.card_wrapper .card-image {
+  width: 100%;
+  min-width: 266px;
+  height: 100%;
+  min-height: 400px;
+  max-height: 400px;
+  overflow: hidden;
+}
+.card_wrapper .card-image img {
+  transition: 0.5s all ease;
+  transform: scale(1);
+}
+.card_wrapper .card-image:hover img {
+  transition: 0.5s all ease;
+  transform: scale(1.03);
+}
+@media screen and (max-width: 992px) {
+  .card_wrapper .card-image {
+    min-width: 180px;
+    height: 100%;
+    min-height: 400px;
+    max-height: 400px;
+  }
+}
+.card_wrapper .card-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
+}
+.card_wrapper .card-content p.large {
+  margin: 16px 0 8px;
+}
+
+.pagination_wrapper {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.pagination_wrapper ul {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+}
+.pagination_wrapper ul li {
+  border-radius: 4px;
+  background-color: #092c39;
+  padding: 4px 11px;
+  cursor: pointer;
+}
+.pagination_wrapper ul li.active {
+  background-color: #2bd17e;
+}
+.pagination_wrapper ul li.previous,
+.pagination_wrapper ul li.next {
+  background-color: transparent;
+}/*# sourceMappingURL=index.css.map */
